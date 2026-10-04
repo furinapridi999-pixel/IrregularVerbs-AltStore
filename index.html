@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Глаголы">
+<meta name="theme-color" content="#3fae3a">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>Неправильные глаголы</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6fbf2;--card:#fff;--ink:#23301f;--soft:#6b7a66;--line:#dbe6d4;--green:#3fae3a;--greenD:#2b8a28;--greenL:#e3f6df;--red:#e5484d;--redL:#fde8e8;--blue:#2f80ed;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a12;--card:#1c261b;--ink:#eaf3e6;--soft:#9aab94;--line:#2e3b2c;--greenL:#1f3a1d;--redL:#3a1d1e}}
+:root[data-theme="dark"]{--bg:#121a12;--card:#1c261b;--ink:#eaf3e6;--soft:#9aab94;--line:#2e3b2c;--greenL:#1f3a1d;--redL:#3a1d1e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;min-height:100%}
+body{background:var(--bg);color:var(--ink);font-family:Nunito,-apple-system,system-ui,sans-serif;font-weight:600}
+.app{max-width:520px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;padding:16px}
+.top{display:flex;align-items:center;gap:12px;font-weight:900}
+.bar{flex:1;height:16px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--green);border-radius:99px;transition:width .35s}
+.x{background:none;border:0;font-size:24px;color:var(--soft);cursor:pointer;padding:4px}
+h1{font-size:30px;font-weight:900;margin:18px 0 4px;line-height:1.1}
+h2{font-size:24px;font-weight:900;margin:8px 0 4px}
+.sub{color:var(--soft);margin:0 0 18px}
+.stats{display:flex;gap:10px;margin-bottom:18px}
+.stats div{flex:1;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:10px;text-align:center}
+.stats b{display:block;font-size:22px;font-weight:900}
+.stats span{font-size:13px;color:var(--soft)}
+.mode{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:var(--card);border:2px solid var(--line);border-bottom-width:5px;border-radius:18px;padding:14px 16px;margin-bottom:12px;font:inherit;color:inherit;cursor:pointer}
+.mode:active{transform:translateY(3px);border-bottom-width:2px}
+.mode .ic{font-size:28px;width:48px;height:48px;display:grid;place-items:center;flex:none}
+.mode .num{border-radius:50%;background:var(--green);color:#fff;font-size:20px;font-weight:900}
+.mode .num.full{background:var(--gold,#f5b700)}
+.mode b{font-size:18px;font-weight:900;display:block}
+.mode span{color:var(--soft);font-size:14px}
+.mode .grow{flex:1;min-width:0}
+.mini{height:8px;background:var(--line);border-radius:99px;margin-top:6px;overflow:hidden}
+.mini i{display:block;height:100%;background:var(--green)}
+.mode.review{border-color:var(--red);background:var(--redL)}
+.list{margin-top:8px;background:var(--card);border:2px solid var(--line);border-radius:18px;overflow:hidden}
+.row{display:grid;grid-template-columns:1.1fr 1fr 1fr 34px;gap:6px;padding:10px 14px;border-top:1px solid var(--line);align-items:center;word-break:break-word}
+.row:first-child{border-top:0;color:var(--soft);font-size:13px}
+.row small{display:block;color:var(--soft);font-size:12px}
+.row .st{color:var(--green)}
+.spk{background:none;border:0;font-size:18px;cursor:pointer;padding:0}
+input.search{font:inherit;font-size:17px;width:100%;padding:12px 14px;border-radius:14px;border:2px solid var(--line);background:var(--card);color:var(--ink);margin:6px 0 4px}
+.lesson{flex:1;display:flex;flex-direction:column}
+.q{font-size:22px;font-weight:900;margin:26px 0 6px}
+.hint{color:var(--soft);margin:0 0 18px}
+.chain{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;font-size:24px;font-weight:900;margin:10px 0 22px;text-align:center}
+.chain .arr{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:16px}
+.chain .gap{min-width:90px;border-bottom:4px dashed var(--blue);color:var(--blue);padding:0 6px}
+.opts{display:grid;gap:10px}
+.opt{font:inherit;font-size:20px;font-weight:800;color:inherit;background:var(--card);border:2px solid var(--line);border-bottom-width:5px;border-radius:16px;padding:14px;cursor:pointer}
+.opt.sel{border-color:var(--blue);color:var(--blue)}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+input.type{font:inherit;font-size:22px;font-weight:800;width:100%;padding:14px;border-radius:16px;border:2px solid var(--line);background:var(--card);color:var(--ink)}
+input.type:focus,input.search:focus{outline:none;border-color:var(--blue)}
+.foot{margin-top:auto;padding-top:20px}
+.btn{width:100%;font:inherit;font-size:18px;font-weight:900;border:0;border-radius:16px;padding:16px;cursor:pointer;color:#fff;background:var(--green);box-shadow:0 5px 0 var(--greenD)}
+.btn.blue{background:var(--blue);box-shadow:0 5px 0 #1f5fb8;margin-top:14px}
+.btn:disabled{background:var(--line);box-shadow:none;color:var(--soft);cursor:default}
+.btn:active:not(:disabled){transform:translateY(4px);box-shadow:none}
+.fb{border-radius:16px;padding:14px 16px;margin-bottom:12px;font-weight:800}
+.fb.good{background:var(--greenL);color:var(--greenD)}
+.fb.wrong{background:var(--redL);color:var(--red)}
+.card{perspective:900px;height:230px;margin:20px 0;cursor:pointer}
+.inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.card.f .inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:2px solid var(--line);border-bottom-width:6px;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px;text-align:center}
+.face.back{transform:rotateY(180deg)}
+.big{font-size:40px;font-weight:900}
+.done{text-align:center;margin-top:40px}
+.done .big{font-size:64px}
+button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app" id="app"></div>
+<script>
+const RAW=`be|was/were|been|быть
+have|had|had|иметь
+do|did|done|делать
+say|said|said|сказать
+go|went|gone|идти, ехать
+get|got|got/gotten|получать
+make|made|made|делать, создавать
+know|knew|known|знать
+think|thought|thought|думать
+take|took|taken|брать
+see|saw|seen|видеть
+come|came|come|приходить
+give|gave|given|давать
+find|found|found|находить
+tell|told|told|рассказывать
+become|became|become|становиться
+leave|left|left|уходить, оставлять
+feel|felt|felt|чувствовать
+put|put|put|класть, ставить
+bring|brought|brought|приносить
+begin|began|begun|начинать
+keep|kept|kept|хранить, продолжать
+hold|held|held|держать
+write|wrote|written|писать
+stand|stood|stood|стоять
+hear|heard|heard|слышать
+let|let|let|позволять
+mean|meant|meant|значить
+set|set|set|устанавливать
+meet|met|met|встречать
+run|ran|run|бежать
+pay|paid|paid|платить
+sit|sat|sat|сидеть
+speak|spoke|spoken|говорить
+lie|lay|lain|лежать
+lead|led|led|вести
+read|read|read|читать
+grow|grew|grown|расти
+lose|lost|lost|терять
+fall|fell|fallen|падать
+send|sent|sent|отправлять
+build|built|built|строить
+understand|understood|understood|понимать
+draw|drew|drawn|рисовать
+break|broke|broken|ломать
+spend|spent|spent|тратить, проводить
+cut|cut|cut|резать
+rise|rose|risen|подниматься
+drive|drove|driven|водить машину
+buy|bought|bought|покупать
+wear|wore|worn|носить одежду
+choose|chose|chosen|выбирать
+eat|ate|eaten|есть, кушать
+drink|drank|drunk|пить
+sleep|slept|slept|спать
+swim|swam|swum|плавать
+sing|sang|sung|петь
+fly|flew|flown|летать
+forget|forgot|forgotten|забывать
+sell|sold|sold|продавать
+teach|taught|taught|учить, преподавать
+catch|caught|caught|ловить
+fight|fought|fought|драться, бороться
+throw|threw|thrown|бросать
+win|won|won|побеждать
+show|showed|shown/showed|показывать
+hit|hit|hit|ударять
+shut|shut|shut|закрывать
+cost|cost|cost|стоить
+hurt|hurt|hurt|ранить, болеть
+learn|learnt/learned|learnt/learned|учить, узнавать
+burn|burnt/burned|burnt/burned|гореть, жечь
+dream|dreamt/dreamed|dreamt/dreamed|мечтать, видеть сны
+smell|smelt/smelled|smelt/smelled|пахнуть, нюхать
+spell|spelt/spelled|spelt/spelled|произносить по буквам
+spill|spilt/spilled|spilt/spilled|проливать
+spoil|spoilt/spoiled|spoilt/spoiled|портить
+lean|leant/leaned|leant/leaned|опираться
+leap|leapt/leaped|leapt/leaped|прыгать
+light|lit/lighted|lit/lighted|зажигать
+wake|woke|woken|просыпаться
+ride|rode|ridden|ехать верхом
+hide|hid|hidden|прятать
+bite|bit|bitten|кусать
+shake|shook|shaken|трясти
+steal|stole|stolen|красть
+freeze|froze|frozen|замерзать
+forgive|forgave|forgiven|прощать
+hang|hung|hung|вешать
+blow|blew|blown|дуть
+dig|dug|dug|копать
+feed|fed|fed|кормить
+bleed|bled|bled|кровоточить
+breed|bred|bred|разводить
+deal|dealt|dealt|иметь дело
+dwell|dwelt|dwelt|обитать
+flee|fled|fled|убегать, спасаться
+forbid|forbade|forbidden|запрещать
+forecast|forecast|forecast|предсказывать
+foresee|foresaw|foreseen|предвидеть
+grind|ground|ground|молоть
+kneel|knelt|knelt|стоять на коленях
+lay|laid|laid|класть
+lend|lent|lent|давать взаймы
+bend|bent|bent|сгибать
+bet|bet|bet|держать пари
+bid|bid|bid|предлагать цену
+bind|bound|bound|связывать
+arise|arose|arisen|возникать
+awake|awoke|awoken|будить, просыпаться
+bear|bore|borne/born|выносить, рождать
+beat|beat|beaten|бить
+cast|cast|cast|бросать, отливать
+cling|clung|clung|цепляться
+creep|crept|crept|ползти
+dive|dived/dove|dived|нырять
+fit|fit/fitted|fit/fitted|подходить по размеру
+fling|flung|flung|швырять
+mistake|mistook|mistaken|ошибаться
+misunderstand|misunderstood|misunderstood|неправильно понять
+overcome|overcame|overcome|преодолевать
+oversleep|overslept|overslept|проспать
+overtake|overtook|overtaken|обгонять
+prove|proved|proven/proved|доказывать
+quit|quit|quit|бросать, уходить
+rid|rid|rid|избавлять
+ring|rang|rung|звонить
+seek|sought|sought|искать
+sew|sewed|sewn/sewed|шить
+shine|shone|shone|светить, сиять
+shoot|shot|shot|стрелять, снимать
+shrink|shrank|shrunk|сжиматься
+sink|sank|sunk|тонуть
+slide|slid|slid|скользить
+slit|slit|slit|разрезать
+sow|sowed|sown/sowed|сеять
+speed|sped|sped|мчаться
+spin|spun|spun|вращать
+spit|spat|spat|плевать
+split|split|split|раскалывать
+spread|spread|spread|распространять
+spring|sprang|sprung|прыгать, вскакивать
+stick|stuck|stuck|приклеивать
+sting|stung|stung|жалить
+stink|stank|stunk|вонять
+strike|struck|struck|ударять, бастовать
+strive|strove|striven|стремиться
+swear|swore|sworn|клясться, ругаться
+sweep|swept|swept|подметать
+swell|swelled|swollen|опухать
+swing|swung|swung|качать, раскачиваться
+tear|tore|torn|рвать
+tread|trod|trodden|ступать
+undergo|underwent|undergone|подвергаться
+undertake|undertook|undertaken|предпринимать
+upset|upset|upset|расстраивать
+weave|wove|woven|ткать
+weep|wept|wept|плакать
+wind|wound|wound|наматывать, заводить
+withdraw|withdrew|withdrawn|снимать деньги, отзывать
+broadcast|broadcast|broadcast|транслировать
+burst|burst|burst|лопаться
+mow|mowed|mown/mowed|косить
+shed|shed|shed|сбрасывать, проливать
+wet|wet|wet|мочить
+rewrite|rewrote|rewritten|переписывать
+`;
+const VERBS=RAW.trim().split("\n").map(l=>{const[v,p,pp,ru]=l.split("|");return{v,p,pp,ru}});
+const SIZE=15,UNITS=[];for(let i=0;i<VERBS.length;i+=SIZE)UNITS.push(VERBS.slice(i,i+SIZE));
+const KEY="irrverbs-v1";
+let S={xp:0,best:0,learned:{}};
+(function load(){let raw=null;if(typeof window.__NATIVE_STATE==="string")raw=window.__NATIVE_STATE;else{try{raw=localStorage.getItem(KEY)}catch(e){}}
+ try{const s=JSON.parse(raw);if(s&&typeof s==="object")S=Object.assign(S,s)}catch(e){}})();
+function save(){const j=JSON.stringify(S);try{localStorage.setItem(KEY,j)}catch(e){}try{window.webkit.messageHandlers.save.postMessage(j)}catch(e){}}
+const $=id=>document.getElementById(id);
+const shuffle=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+const norm=s=>s.trim().toLowerCase().replace(/\s+/g,"");
+const vars=s=>s.split("/");
+const score=x=>S.learned[x.v]||0;
+const isLearned=x=>score(x)>=3;
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\//g," or "));u.lang="en-US";u.rate=.85;speechSynthesis.speak(u)}catch(e){}}
+const app=$("app");
+const weakList=()=>VERBS.filter(x=>x.v in S.learned&&score(x)<2).slice(0,SIZE);
+const row=x=>`<div class="row"><span>${x.v}${isLearned(x)?' <span class="st">✓</span>':''}<small>${x.ru}</small></span><span>${x.p}</span><span>${x.pp}</span><button class="spk" aria-label="Прослушать ${x.v}" onclick="say('${x.v}, ${x.p}, ${x.pp}')">🔊</button></div>`;
+const head=`<div class="row"><span>Infinitive</span><span>Past</span><span>Participle</span><span></span></div>`;
+
+function home(){
+ window.scrollTo(0,0);
+ const done=VERBS.filter(isLearned).length,weak=weakList();
+ app.innerHTML=`<h1>Неправильные глаголы</h1><p class="sub">${VERBS.length} глаголов в ${UNITS.length} блоках. Глагол выучен после трёх верных ответов.</p>
+ <div class="stats"><div><b>⚡ ${S.xp}</b><span>опыт</span></div><div><b>🔥 ${S.best}</b><span>лучшая серия</span></div><div><b>⭐ ${done}</b><span>из ${VERBS.length}</span></div></div>
+ ${weak.length?`<button class="mode review" id="rev"><span class="ic">🩹</span><div class="grow"><b>Работа над ошибками</b><span>${weak.length} глаголов, где ты ошибался</span></div></button>`:""}
+ ${UNITS.map((u,i)=>{const n=u.filter(isLearned).length;return`<button class="mode" data-u="${i}"><span class="ic num ${n===u.length?"full":""}">${n===u.length?"★":i+1}</span><div class="grow"><b>Блок ${i+1}</b><span>${u.slice(0,4).map(x=>x.v).join(", ")}…</span><div class="mini"><i style="width:${n/u.length*100}%"></i></div></div></button>`}).join("")}
+ <button class="mode" id="all"><span class="ic">📖</span><div class="grow"><b>Все глаголы</b><span>Таблица с поиском и озвучкой</span></div></button>`;
+ document.querySelectorAll("[data-u]").forEach(b=>b.onclick=()=>unit(+b.dataset.u));
+ if($("rev"))$("rev").onclick=()=>unitView("Работа над ошибками",weak,home);
+ $("all").onclick=allVerbs;
+}
+function unit(i){unitView(`Блок ${i+1}`,UNITS[i],()=>unit(i))}
+function unitView(title,list,back){
+ window.scrollTo(0,0);
+ app.innerHTML=`<div class="top"><button class="x" id="bk" aria-label="Назад">←</button><span>${title}</span></div>
+ <h2 style="margin-top:16px">${list.filter(isLearned).length} из ${list.length} выучено</h2><p class="sub">Выбери, как тренироваться.</p>
+ <button class="mode" data-m="cards"><span class="ic">🃏</span><div><b>Карточки</b><span>Смотри и слушай все три формы</span></div></button>
+ <button class="mode" data-m="choice"><span class="ic">🎯</span><div><b>Выбери форму</b><span>Найди пропущенную форму</span></div></button>
+ <button class="mode" data-m="type"><span class="ic">⌨️</span><div><b>Напиши сам</b><span>Впиши форму без подсказок</span></div></button>
+ <button class="mode" data-m="listen"><span class="ic">🎧</span><div><b>На слух</b><span>Услышь глагол и выбери перевод</span></div></button>
+ <div class="list">${head}${list.map(row).join("")}</div>`;
+ $("bk").onclick=home;
+ document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>b.dataset.m==="cards"?cards(list,back):lesson(b.dataset.m,list,back));
+}
+function allVerbs(){
+ window.scrollTo(0,0);
+ app.innerHTML=`<div class="top"><button class="x" id="bk" aria-label="Назад">←</button><span>Все глаголы</span></div>
+ <input class="search" id="q" placeholder="Поиск: go, went, писать…" autocomplete="off" autocapitalize="off" aria-label="Поиск"><div class="list" id="tb"></div>`;
+ const draw=f=>{f=norm(f);$("tb").innerHTML=head+VERBS.filter(x=>!f||[x.v,x.p,x.pp,x.ru].some(s=>s.toLowerCase().includes(f))).map(row).join("")};
+ $("bk").onclick=home;$("q").oninput=e=>draw(e.target.value);draw("");
+}
+function cards(list,back){
+ let i=0;const deck=shuffle(list);
+ const draw=()=>{const x=deck[i];
+ app.innerHTML=`<div class="top"><button class="x" id="cl" aria-label="Закрыть">✕</button><div class="bar"><i style="width:${i/deck.length*100}%"></i></div><span>${i+1}/${deck.length}</span></div>
+ <div class="lesson"><p class="q">Нажми на карточку, чтобы перевернуть</p>
+ <div class="card" id="c"><div class="inner"><div class="face"><div class="big">${x.v}</div><div class="sub">${x.ru}</div></div>
+ <div class="face back"><div class="big" style="font-size:28px">${x.v} › ${x.p} › ${x.pp}</div><div class="sub">${x.ru}</div></div></div></div>
+ <div class="foot"><button class="btn" id="nx">${i<deck.length-1?"Дальше":"Готово"}</button></div></div>`;
+ $("cl").onclick=back;
+ $("c").onclick=()=>{$("c").classList.toggle("f");if($("c").classList.contains("f"))say(`${x.v}, ${x.p}, ${x.pp}`)};
+ $("nx").onclick=()=>{i++;if(i<deck.length)draw();else{S.xp+=5;save();back()}}};
+ draw();
+}
+function regular(v){if(v.endsWith("e"))return v+"d";if(/[^aeiou]y$/.test(v))return v.slice(0,-1)+"ied";return v+"ed"}
+let lastV=null;
+function makeTask(mode,list){
+ let x;do{x=list[Math.floor(Math.random()*list.length)]}while(list.length>1&&x===lastV);lastV=x;
+ if(mode==="listen"){const others=shuffle(VERBS.filter(y=>y.ru!==x.ru)).slice(0,3).map(y=>y.ru);return{x,ans:x.ru,opts:shuffle([x.ru,...others])}}
+ const slot=Math.random()<.5?"p":"pp",ans=x[slot],av=vars(ans);
+ const clash=w=>w===ans||vars(w).some(z=>av.includes(z));
+ const cand=[x.v,x.p,x.pp,regular(x.v)];
+ shuffle(list.concat(shuffle(VERBS).slice(0,10))).forEach(y=>cand.push(y[slot]));
+ const pool=[ans];for(const w of cand){if(pool.length>=4)break;if(!clash(w)&&!pool.includes(w))pool.push(w)}
+ return{x,slot,ans,opts:shuffle(pool)};
+}
+function lesson(mode,list,back){
+ const total=10;let n=0,hearts=5,correct=0,streak=0,task,picked=null,checked=false;
+ const next=()=>{task=makeTask(mode,list);picked=null;checked=false;draw()};
+ const draw=()=>{const t=task,x=t.x;let body="";
+  if(mode==="listen")body=`<p class="q">Что означает этот глагол?</p><p class="hint">Нажми, чтобы прослушать ещё раз</p><div class="chain"><button class="opt" id="rep" style="font-size:40px;width:110px" aria-label="Прослушать">🔊</button></div>`;
+  else{const g=`<span class="gap" id="gap">?</span>`;
+   body=`<p class="q">${t.slot==="p"?"Вставь Past Simple":"Вставь Past Participle"}</p><p class="hint">${x.ru}</p>
+   <div class="chain"><span>${x.v}</span><span class="arr">›</span>${t.slot==="p"?g:`<span>${x.p}</span>`}<span class="arr">›</span>${t.slot==="pp"?g:`<span>${x.pp}</span>`}</div>`}
+  const input=mode==="type"?`<input class="type" id="in" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Впиши форму" aria-label="Ответ">`
+   :`<div class="opts">${t.opts.map((o,k)=>`<button class="opt" data-k="${k}">${o}</button>`).join("")}</div>`;
+  app.innerHTML=`<div class="top"><button class="x" id="cl" aria-label="Закрыть">✕</button><div class="bar"><i style="width:${n/total*100}%"></i></div><span>❤️ ${hearts}</span></div>
+  <div class="lesson">${body}${input}<div class="foot"><div id="fb"></div><button class="btn" id="go" disabled>Проверить</button></div></div>`;
+  $("cl").onclick=back;
+  if(mode==="listen"){$("rep").onclick=()=>say(x.v);setTimeout(()=>say(x.v),250)}
+  if(mode==="type"){const i=$("in");i.focus();i.oninput=()=>{$("go").disabled=!i.value.trim()};i.onkeydown=e=>{if(e.key==="Enter"&&!$("go").disabled)$("go").click()}}
+  else document.querySelectorAll(".opt[data-k]").forEach(b=>b.onclick=()=>{if(checked)return;picked=t.opts[b.dataset.k];
+   document.querySelectorAll(".opt[data-k]").forEach(z=>z.classList.remove("sel"));b.classList.add("sel");
+   if($("gap"))$("gap").textContent=picked;if(mode!=="listen")say(picked);$("go").disabled=false});
+  $("go").onclick=check};
+ const check=()=>{
+  if(checked){n++;if(hearts<=0||n>=total)return finish();return next()}
+  checked=true;const t=task,given=mode==="type"?$("in").value:picked;
+  const ok=mode==="type"?(norm(given)===norm(t.ans)||vars(t.ans).includes(norm(given))):given===t.ans;
+  if(mode==="type")$("in").disabled=true;
+  else document.querySelectorAll(".opt[data-k]").forEach(b=>{const o=t.opts[b.dataset.k];if(o===t.ans)b.classList.add("ok");else if(o===given)b.classList.add("bad")});
+  if(ok){correct++;streak++;S.xp+=10;S.learned[t.x.v]=score(t.x)+1;S.best=Math.max(S.best,streak);
+   $("fb").innerHTML=`<div class="fb good">✅ Верно!${streak>2?" 🔥 Серия "+streak:""}</div>`}
+  else{hearts--;streak=0;S.learned[t.x.v]=Math.max(0,score(t.x)-1);
+   $("fb").innerHTML=`<div class="fb wrong">Правильно: ${t.x.v} › ${t.x.p} › ${t.x.pp}</div>`}
+  save();say(`${t.x.v}, ${t.x.p}, ${t.x.pp}`);$("go").textContent="Дальше";$("go").disabled=false};
+ const finish=()=>{const win=hearts>0;
+  app.innerHTML=`<div class="done"><div class="big">${win?"🏆":"💔"}</div><h1>${win?"Урок пройден":"Жизни закончились"}</h1>
+  <p class="sub">Правильно ${correct} из ${n}. Всего опыта: ⚡ ${S.xp}</p></div>
+  <div class="foot"><button class="btn" id="again">Ещё раз</button><button class="btn blue" id="bk">Назад к блоку</button></div>`;
+  $("again").onclick=()=>lesson(mode,list,back);$("bk").onclick=back};
+ next();
+}
+home();
+</script>
+</body>
+</html>
